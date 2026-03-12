@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Load Poppins from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+    </style>
+
+    <script>
+        
+    </script>
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" placeholder="0" id="input1">
+        <div>
+            <button type="button" class="operator" onclick="ac()">AC</button>
+            <button type="button" class="operator" onclick="del()">DEL</button>
+            <button type="button" class="operator" onclick="show('%')">%</button>
+            <button type="button" class="operator" onclick="show('/')">/</button>
+        </div>
+        <div>
+            <button type="button" onclick="show('7')">7</button>
+            <button type="button" onclick="show('8')">8</button>
+            <button type="button" onclick="show('9')">9</button>
+            <button type="button" class="operator" onclick="show('*')">*</button>
+        </div>
+        <div>
+            <button type="button" onclick="show('4')">4</button>
+            <button type="button" onclick="show('5')">5</button>
+            <button type="button" onclick="show('6')">6</button>
+            <button type="button" class="operator" onclick="show('-')">-</button>
+        </div>
+        <div>
+            <button type="button" onclick="show('1')">1</button>
+            <button type="button" onclick="show('2')">2</button>
+            <button type="button" onclick="show('3')">3</button>
+            <button type="button" onclick="show('+')">+</button>
+        </div>
+        <div>
+            <button type="button" class="wide" onclick="show('00')">00</button>
+            <button type="button" class="wide" onclick="show('0')">0</button>
+            <button type="button" class="operator" onclick="show('.')">.</button>
+            <button type="button" class="equal" onclick="calc1()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
